@@ -1,0 +1,10 @@
+tqdm
+syntok
+BeautifulSoup4
+w3lib
+tensorflow==1.14.0
+tf_sentencepiece==0.1.83
+annoy
+faiss
+tensorflow_hub
+pandas
