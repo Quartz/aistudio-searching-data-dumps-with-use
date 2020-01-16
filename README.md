@@ -8,6 +8,8 @@ Here's the code demo so you can reproduce our work. For this demo, we'll be sear
 
 This isn't a full library or off-the-shelf software, but rather a demonstration that you can adapt for yourself.
 
+This workflow works with huge document sets. The demo documents are small, so that indexing only takes a few seconds, rather than hours. The Luanda Leaks investigation involved 356 gigabytes of files (and 11 gigabytes of plain text). 
+
 ## how to
 There are a few steps you'll have to take to run the demo.
 
