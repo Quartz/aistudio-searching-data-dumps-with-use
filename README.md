@@ -4,7 +4,7 @@ By Jeremy B. Merrill, [Quartz](https://www.qz.com)
 
 As part of Quartz's participation in the Luanda Leaks investigation, we built an system for searching large heterogenous document sets with AI. For more info, LINK TK.
 
-Here's the code demo so you can reproduce our work. For this demo, we'll be searching in a set of a few thousand emails between Bill de Blasio and some advisors, informally called the "Agent of the City documents."
+Here's the code demo so you can reproduce our work. For this demo, we'll be searching in [a set of a few thousand emails](https://github.com/Quartz/aistudio-doc2vec-for-investigative-journalism/blob/master/2018.05.24_BerlinRosen_Responsive_Records.pdf) between Bill de Blasio and some advisors, informally called the "Agent of the City documents."
 
 This isn't a full library or off-the-shelf software, but rather a demonstration that you can adapt for yourself.
 
