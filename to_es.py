@@ -17,8 +17,14 @@ batch_size = 512
 total_chunks = 37281 # get this with `wc nyc_docs_paragraphs.json`
 total_docs = 4251
 
+## Put ElasticSearch credentials here
+es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
 
-es = Elasticsearch()
+if not es.ping():
+  raise ValueError("Connection to ElasticSearch failed")
+  sys.exit(1)
+else:
+  print('Connection to ElasticSearch OK')
 
 doc_counter = 0
 
