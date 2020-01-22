@@ -12,6 +12,7 @@ from os import environ
 import pandas as pd
 import numpy as np
 from tensorflow.python.framework.errors_impl import ResourceExhaustedError
+from tensorflow.python.framework.errors_impl import InvalidArgumentError as TFInvalidArgumentError
 import faiss
 from annoy import AnnoyIndex
 
@@ -25,11 +26,12 @@ try:
         a = tf.constant([1.0, 2.0, 3.0, 4.0, 5.0, 6.0], shape=[2, 3], name='a')
         b = tf.constant([1.0, 2.0, 3.0, 4.0, 5.0, 6.0], shape=[3, 2], name='b')
         c = tf.matmul(a, b)
-except RuntimeError: 
+
+    with tf.Session() as sess:
+        print (sess.run(c))
+except (RuntimeError, TFInvalidArgumentError): 
     print("no GPU present, this'll be slow, probably")
 
-with tf.Session() as sess:
-    print (sess.run(c))
 
 use_module_url = "https://tfhub.dev/google/universal-sentence-encoder-multilingual/1"
 
