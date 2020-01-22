@@ -8,3 +8,4 @@ annoy
 faiss
 tensorflow_hub
 pandas
+elasticsearch_dsl==6.0.0
