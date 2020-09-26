@@ -2,7 +2,7 @@ tqdm
 syntok
 BeautifulSoup4
 w3lib
-tensorflow==1.14.0
+tensorflow==1.15.4
 tf_sentencepiece==0.1.83
 annoy
 faiss
